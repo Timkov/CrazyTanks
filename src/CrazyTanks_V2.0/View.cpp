@@ -3,7 +3,8 @@
 
 #include "View.h"
 
-View::View () {
+View::View () 
+{
   HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
   CONSOLE_CURSOR_INFO cursorInfo;
   GetConsoleCursorInfo(hStdout, &cursorInfo);
@@ -11,12 +12,14 @@ View::View () {
   SetConsoleCursorInfo(hStdout, &cursorInfo);
 }
 
-void View::printMenu () const {
+void View::printMenu () const
+{
   std::cout << "CrazyTanks game \n\n";
   std::cout << "Press any key to start, ESC to exit \n";
 }
 
-void View::printEndMessage (const bool gameResult) const {
+void View::printEndMessage (const bool gameResult) const
+{
   system("cls");
   if (gameResult)
     std::cout << "Victory!\n";
@@ -24,17 +27,21 @@ void View::printEndMessage (const bool gameResult) const {
     std::cout << "Game over\n";
 }
 
-void View::printField (const Field& field, const int lives, const int score, const int time) const {
+void View::printField (const Field& field, const int lives, const int score, const int time) const 
+{
 
   system("cls");
 
-  for (auto i = 0; i < field.getHeight(); i++) {
+  for (auto i = 0; i < field.getHeight(); i++)
+  {
 
-    for (auto j = 0; j < field.getWidth(); j++) {
+    for (auto j = 0; j < field.getWidth(); j++)
+    {
 
       std::cout<<field.getCell(i,j);
 
     }
+
     std::cout<<"\n";
 
   }

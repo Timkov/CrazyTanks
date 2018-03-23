@@ -1,13 +1,15 @@
 #include "AttakPlayerTankStrategy.h"
 
 typeh::Direction AttakPlayerTankStrategy::chooseDirection(const Unit& player, 
-                                                          const Unit& gold, const int x, const int y) const {
+                                                          const Unit& gold, const int x, const int y) const
+{
 
 
   if (rand() % 7 == 1)
     return static_cast< typeh::Direction>(rand()%4);
 
-  if (rand() % 2) {
+  if (rand() % 2) 
+  {
 
     if (x < player.getX())
       return  typeh::DOWN;
@@ -15,7 +17,8 @@ typeh::Direction AttakPlayerTankStrategy::chooseDirection(const Unit& player,
     else 
       return  typeh::UP;
   }
-  else {
+  else 
+  {
 
     if (y < player.getY())
       return  typeh::RIGHT;

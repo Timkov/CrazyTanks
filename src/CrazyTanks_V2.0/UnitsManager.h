@@ -8,7 +8,8 @@
 #include "Bullet.h"
 #include "Wall.h"
 
-class UnitsManager {
+class UnitsManager 
+{
 
 public:
 

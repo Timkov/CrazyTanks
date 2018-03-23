@@ -3,7 +3,8 @@
 
 #include "Field.h"
 
-class View {
+class View 
+{
 
 public:
 

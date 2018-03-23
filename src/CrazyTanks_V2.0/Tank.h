@@ -7,7 +7,8 @@
 #include "TankStrategy.h"
 
 
-class Tank : public ActiveUnit {
+class Tank : public ActiveUnit
+{
 
 public:
 

@@ -3,7 +3,8 @@
 
 #include "Unit.h"
 
-class Wall : public Unit {
+class Wall : public Unit
+{
 
 public:
 

@@ -6,7 +6,8 @@
 #include "Field.h"
 
 
-class TankStrategy {
+class TankStrategy
+{
 
 public:
 

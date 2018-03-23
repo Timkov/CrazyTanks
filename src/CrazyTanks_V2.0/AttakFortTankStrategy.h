@@ -4,7 +4,8 @@
 #include "TankStrategy.h"
 
 
-class AttakFortTankStrategy : public TankStrategy {
+class AttakFortTankStrategy : public TankStrategy
+{
 
 public:
 

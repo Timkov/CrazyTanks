@@ -4,7 +4,8 @@
 #include "Unit.h"
 
 
-class ActiveUnit : public Unit {
+class ActiveUnit : public Unit
+{
 
 public:
   

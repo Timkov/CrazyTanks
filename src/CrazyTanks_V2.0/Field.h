@@ -7,7 +7,8 @@
 #include "TypeHelper.h"
 
 
-class Field {
+class Field 
+{
 
 public:
 

@@ -2,21 +2,25 @@
 
 ActiveUnit::ActiveUnit (const int xIn, const int yIn, 
                         const typeh::Direction dir) : Unit (xIn, yIn), direction_ (dir)
-                        {}
+{ }
 
- typeh::Direction ActiveUnit::getDirection () const {
+ typeh::Direction ActiveUnit::getDirection () const 
+{
   return direction_;
 }
 
-void ActiveUnit::setDirection (const typeh::Direction newDirection) {
+void ActiveUnit::setDirection (const typeh::Direction newDirection) 
+{
   direction_ = newDirection;
 }
 
 ActiveUnit::~ActiveUnit () = default;
 
-void ActiveUnit::move (Field& field) {
+void ActiveUnit::move (Field& field)
+{
 
-  switch(direction_) {
+  switch(direction_)
+  {
 
     case  typeh::UP:
       x_--;

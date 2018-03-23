@@ -1,14 +1,17 @@
 #pragma once
 
-namespace typeh {
+namespace typeh 
+{
 
-  enum Direction {
+  enum Direction 
+  {
 
     UP,LEFT,DOWN,RIGHT
 
   };
 
-  enum UnitSymbol {
+  enum UnitSymbol 
+  {
 
     TANK = '#', PLAYER_TANK = '@', WALL = '=',
     GOLD = '$', PERIMETER_WALL = '-', BULLET = '.',

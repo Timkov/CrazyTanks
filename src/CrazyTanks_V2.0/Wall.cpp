@@ -3,16 +3,19 @@
 Wall::Wall (const int xIn, const int yIn, const bool p) : Unit (xIn, yIn), perimeter_(p)
 { }
 
-void Wall::draw(Field& field) {
+void Wall::draw(Field& field) 
+{
   if(destroyed_)
     return;
 
-  if(perimeter_){
+  if(perimeter_)
+  {
     field.setCell(x_, y_, typeh::PERIMETER_WALL);
     return;
   }
 
-  if(field.getCell(x_, y_) == typeh::DESTROYED){
+  if(field.getCell(x_, y_) == typeh::DESTROYED)
+  {
     destroyed_ = true;
   }
   else

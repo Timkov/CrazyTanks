@@ -4,7 +4,8 @@
 #include "Field.h"
 #include "TypeHelper.h"
 
-class Unit {
+class Unit 
+{
 
 public:
 

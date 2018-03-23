@@ -8,7 +8,8 @@
 #include "UnitsManager.h"
 
 
-class Game{
+class Game
+{
 
 public:
 

@@ -3,7 +3,8 @@
 
 #include "TankStrategy.h"
 
-class AttakPlayerTankStrategy : public TankStrategy {
+class AttakPlayerTankStrategy : public TankStrategy
+{
 
 public:
 
