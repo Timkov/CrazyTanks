@@ -128,7 +128,7 @@ void UnitsManager::unitsDoAction (Field& field)
 
 }
 
-void UnitsManager::movePlayer (const typeh::Direction dir, Field& field) 
+void UnitsManager::movePlayer (const typeh::Direction& dir, Field& field) 
 {
   
   player_.move(field,dir);
@@ -224,4 +224,5 @@ void UnitsManager::changeTankStrategy (Tank& tank, const Field& field)
     tank.changeStrategy(std::unique_ptr<TankStrategy>(new AttakFortTankStrategy()));
   else
     tank.changeStrategy(std::unique_ptr<TankStrategy>(new AttakPlayerTankStrategy()));
+
 }

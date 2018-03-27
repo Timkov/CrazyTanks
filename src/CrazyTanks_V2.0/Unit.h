@@ -9,19 +9,21 @@ class Unit
 
 public:
 
-  Unit (const int xIn, const int yIn);
+  Unit ();
+
+  Unit (const int& xIn, const int& yIn);
 
   int getX () const;
 
   int getY () const;
 
-  void setDestroyed (const bool newDestroyed);
+  void setDestroyed (const bool& newDestroyed);
 
   bool isDestroyed () const;
 
   virtual void draw (Field& f) = 0;
 
-  virtual ~Unit ();
+  virtual ~Unit () = 0;
 
 protected:
 

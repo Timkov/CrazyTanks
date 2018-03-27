@@ -1,7 +1,7 @@
 #include "AttakFortTankStrategy.h"
 
  typeh::Direction AttakFortTankStrategy::chooseDirection(const Unit& player, 
-                                                         const Unit& gold, const int x, const int y) const
+                                                         const Unit& gold, const int& x, const int& y) const
 {
 
   if (rand() % 5 == 1)

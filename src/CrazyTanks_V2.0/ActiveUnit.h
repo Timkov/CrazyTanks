@@ -9,15 +9,15 @@ class ActiveUnit : public Unit
 
 public:
   
-  ActiveUnit (const int xIn, const int yIn, const typeh::Direction dir);
+  ActiveUnit (const int& xIn, const int& yIn, const typeh::Direction& dir);
 
   virtual void move (Field& field);
 
   typeh::Direction getDirection () const;
 
-  void setDirection (const typeh::Direction newDirection);
+  void setDirection (const typeh::Direction& newDirection);
 
-  virtual ~ActiveUnit ();
+  virtual ~ActiveUnit () = 0;
 
 protected:
 

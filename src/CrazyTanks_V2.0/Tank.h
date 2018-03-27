@@ -12,17 +12,23 @@ class Tank : public ActiveUnit
 
 public:
 
-  Tank (const int xIn, const int yIn, const typeh::Direction dir);
+ 
+
+  Tank (const int& xIn, const int& yIn, const typeh::Direction& dir);
+
+  Tank (const Tank&);
 
   bool doShot( const Unit& gold, const Unit& player);
 
   void move (Field& field) override;
 
-  void move (Field& field, typeh::Direction newDirection);
+  void move (Field& field, const typeh::Direction& newDirection);
 
   void draw (Field& field);
 
   void changeStrategy (std::unique_ptr<TankStrategy> newStrategy);
+
+  ~Tank ();
 
 private:
 

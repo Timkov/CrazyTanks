@@ -8,9 +8,11 @@ class Wall : public Unit
 
 public:
 
-  Wall (const int xIn, const int yIn, const bool p = false);
+  Wall (const int& xIn, const int& yIn, const bool p = false);
 
   void draw (Field& field);
+
+  ~Wall ();
 
 private:
 

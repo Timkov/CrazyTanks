@@ -26,7 +26,7 @@ private:
   std::chrono::time_point
            <std::chrono::steady_clock> startTime_;
 
-  const int delay_ = 150;
+  const int delay_;
 
   void play ();
 

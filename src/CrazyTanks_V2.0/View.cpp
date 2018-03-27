@@ -18,7 +18,7 @@ void View::printMenu () const
   std::cout << "Press any key to start, ESC to exit \n";
 }
 
-void View::printEndMessage (const bool gameResult) const
+void View::printEndMessage (const bool& gameResult) const
 {
   system("cls");
   if (gameResult)
@@ -27,7 +27,7 @@ void View::printEndMessage (const bool gameResult) const
     std::cout << "Game over\n";
 }
 
-void View::printField (const Field& field, const int lives, const int score, const int time) const 
+void View::printField (const Field& field, const int& lives, const int& score, const int& time) const 
 {
 
   system("cls");

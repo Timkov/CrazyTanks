@@ -14,9 +14,9 @@ public:
 
   Field();
 
-  char getCell ( const int x, const int y) const;
+  char getCell ( const int& x, const int& y) const;
 
-  void setCell ( const int x, const int y, const typeh::UnitSymbol symbol);
+  void setCell ( const int& x, const int& y, const typeh::UnitSymbol symbol);
 
   void clear ();
 

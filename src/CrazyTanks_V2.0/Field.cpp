@@ -9,7 +9,7 @@ Field::Field() :width_(50),height_(25)
   }
 }
 
-char Field::getCell (const int x, const int y) const
+char Field::getCell (const int& x, const int& y) const
 {
   return  field_[x][y];
 }
@@ -22,7 +22,7 @@ void Field::clear ()
   }
 }
 
-void Field::setCell (const int x, const int y, const typeh::UnitSymbol symbol) 
+void Field::setCell (const int& x, const int& y, const typeh::UnitSymbol symbol) 
 {
   field_[x][y] = symbol;
 }

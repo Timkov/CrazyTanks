@@ -9,13 +9,15 @@ class Bullet : public ActiveUnit
 
 public:
 
-  Bullet(const int xIn, const int yIn, const typeh::Direction dir, const bool ownerIn);
+  Bullet(const int& xIn, const int& yIn, const typeh::Direction& dir, const bool& ownerIn);
 
   void draw(Field& field);
 
   void move(Field& field) override;
 
   bool isPlayerOwner() const;
+  
+  ~Bullet ();
 
 private:
 

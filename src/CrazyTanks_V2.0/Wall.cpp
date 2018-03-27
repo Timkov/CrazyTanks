@@ -1,10 +1,11 @@
 #include "Wall.h"
 
-Wall::Wall (const int xIn, const int yIn, const bool p) : Unit (xIn, yIn), perimeter_(p)
+Wall::Wall (const int& xIn, const int& yIn, const bool p) : Unit (xIn, yIn), perimeter_(p)
 { }
 
 void Wall::draw(Field& field) 
 {
+
   if(destroyed_)
     return;
 
@@ -21,3 +22,5 @@ void Wall::draw(Field& field)
   else
     field.setCell(x_, y_, typeh::WALL);
 }
+
+Wall::~Wall () = default;

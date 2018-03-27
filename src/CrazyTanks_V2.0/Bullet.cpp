@@ -1,7 +1,7 @@
 #include "Bullet.h"
 
 
-Bullet::Bullet (const int xIn, const int yIn, const typeh::Direction dir, const bool ownerIn):
+Bullet::Bullet (const int& xIn, const int& yIn, const typeh::Direction& dir, const bool& ownerIn):
                       ActiveUnit (xIn, yIn, dir), playerOwns_ (ownerIn), isActivated_ (false)
 { } 
                                                   
@@ -37,3 +37,5 @@ void Bullet::draw (Field& field)
 }
 
 bool Bullet::isPlayerOwner () const { return playerOwns_; }
+
+Bullet::~Bullet () = default;

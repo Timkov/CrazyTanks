@@ -6,7 +6,8 @@
 
 using Clock = std::chrono::steady_clock;
 
-Game::Game () : unitsManager_ (field_)
+
+Game::Game () : unitsManager_ (field_),delay_(150)
 {
   srand(time(0));
   startTime_ = Clock::now();

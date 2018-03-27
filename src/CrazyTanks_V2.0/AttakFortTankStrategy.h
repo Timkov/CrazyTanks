@@ -10,7 +10,7 @@ class AttakFortTankStrategy : public TankStrategy
 public:
 
   typeh::Direction chooseDirection (const Unit& player, const Unit& gold, 
-                                                const int x, const int y) const;
+                                                const int& x, const int& y) const;
 
 };
 

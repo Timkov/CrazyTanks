@@ -19,7 +19,7 @@ public:
 
   void drawUnits (Field& field);
 
-  void movePlayer (const typeh::Direction dir, Field& field);
+  void movePlayer (const typeh::Direction& dir, Field& field);
 
   void doPlayerShot ();
 

@@ -1,7 +1,8 @@
 #include "ActiveUnit.h"
 
-ActiveUnit::ActiveUnit (const int xIn, const int yIn, 
-                        const typeh::Direction dir) : Unit (xIn, yIn), direction_ (dir)
+
+ActiveUnit::ActiveUnit (const int& xIn, const int& yIn,  
+                        const typeh::Direction& dir) : Unit (xIn, yIn), direction_ (dir)
 { }
 
  typeh::Direction ActiveUnit::getDirection () const 
@@ -9,12 +10,11 @@ ActiveUnit::ActiveUnit (const int xIn, const int yIn,
   return direction_;
 }
 
-void ActiveUnit::setDirection (const typeh::Direction newDirection) 
+void ActiveUnit::setDirection (const typeh::Direction& newDirection) 
 {
   direction_ = newDirection;
 }
 
-ActiveUnit::~ActiveUnit () = default;
 
 void ActiveUnit::move (Field& field)
 {
@@ -39,3 +39,5 @@ void ActiveUnit::move (Field& field)
 
   }
 }
+
+ActiveUnit::~ActiveUnit () { }

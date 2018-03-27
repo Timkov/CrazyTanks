@@ -1,7 +1,7 @@
 #include "AttakPlayerTankStrategy.h"
 
 typeh::Direction AttakPlayerTankStrategy::chooseDirection(const Unit& player, 
-                                                          const Unit& gold, const int x, const int y) const
+                                                          const Unit& gold, const int& x, const int& y) const
 {
 
 
