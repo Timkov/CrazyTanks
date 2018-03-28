@@ -21,7 +21,7 @@ public:
 
   bool isDestroyed () const;
 
-  virtual void draw (Field& f) = 0;
+  virtual  typeh::UnitSymbol getSymbol(const Field& field) = 0;
 
   virtual ~Unit () = 0;
 

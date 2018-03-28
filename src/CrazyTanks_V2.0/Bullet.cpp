@@ -20,12 +20,12 @@ void Bullet::move (Field& field)
 
 }
 
-void Bullet::draw (Field& field)
+typeh::UnitSymbol Bullet::getSymbol(const Field& field)
 {
 
   if (isActivated_) 
   {
-    field.setCell(x_, y_, typeh::BULLET);
+    return typeh::BULLET;
 
     if (destroyed_) 
     {

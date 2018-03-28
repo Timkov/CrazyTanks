@@ -10,7 +10,7 @@ public:
 
   Wall (const int& xIn, const int& yIn, const bool p = false);
 
-  void draw (Field& field);
+  typeh::UnitSymbol getSymbol (const Field& field);
 
   ~Wall ();
 

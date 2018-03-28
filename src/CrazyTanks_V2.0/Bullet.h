@@ -11,7 +11,7 @@ public:
 
   Bullet(const int& xIn, const int& yIn, const typeh::Direction& dir, const bool& ownerIn);
 
-  void draw(Field& field);
+  typeh::UnitSymbol getSymbol(const Field& field);
 
   void move(Field& field) override;
 

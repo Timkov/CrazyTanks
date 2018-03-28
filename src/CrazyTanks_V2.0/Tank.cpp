@@ -67,13 +67,13 @@ void Tank::move (Field& field,const typeh::Direction& newDirection)
   }
 }
 
-void Tank::draw (Field& field) 
+typeh::UnitSymbol Tank::getSymbol(const Field& field)
 {
 
   if(!destroyed_)
-    field.setCell(x_, y_, typeh::TANK);
+    return typeh::TANK;
   else
-    field.setCell(x_, y_, typeh::DESTROYED);
+    return typeh::DESTROYED;
 
 }
 

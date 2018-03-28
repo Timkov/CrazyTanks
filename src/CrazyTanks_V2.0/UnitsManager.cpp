@@ -76,18 +76,18 @@ void UnitsManager::drawUnits (Field& field)
 {
 
   for (auto& wall : walls_)
-    wall.draw(field);
+    field.setCell(wall.getX(),wall.getY(),wall.getSymbol(field));
   
   field.clear();
 
   for (auto& bullet : bullets_)
-    bullet.draw(field);
+    field.setCell(bullet.getX(), bullet.getY(), bullet.getSymbol(field));
 
   for (auto& wall : walls_)
-    wall.draw(field);
+    field.setCell(wall.getX(), wall.getY(), wall.getSymbol(field));
 
   for(auto& tank: tanks_)
-    tank.draw(field);
+    field.setCell(tank.getX(), tank.getY(), tank.getSymbol(field));
 
   field.setCell(player_.getX(), player_.getY(), typeh::PLAYER_TANK);
   field.setCell(gold_.getX(), gold_.getY(), typeh::GOLD);

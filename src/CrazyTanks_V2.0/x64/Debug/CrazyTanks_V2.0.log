@@ -1,3 +1,22 @@
-﻿  Field.cpp
+﻿  Wall.cpp
+  UnitsManager.cpp
+d:\crazytanks\src\crazytanks_v2.0\unitsmanager.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\crazytanks\src\crazytanks_v2.0\unitsmanager.cpp(151): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Tank.cpp
+  Field.cpp
+  Bullet.cpp
+  Создание кода...
+d:\crazytanks\src\crazytanks_v2.0\bullet.cpp(37): warning C4715: Bullet::getSymbol: значение возвращается не при всех путях выполнения
+d:\crazytanks\src\crazytanks_v2.0\wall.cpp(23): warning C4715: Wall::getSymbol: значение возвращается не при всех путях выполнения
+  Компиляция...
+  Unit.cpp
+  ActiveUnit.cpp
+  Создание кода...
+  Пропуск... (изменения не обнаружены)
+  PlayersTankStrategy.cpp
+  Main.cpp
+  Game.cpp
+  AttakPlayerTankStrategy.cpp
+  AttakFortTankStrategy.cpp
   CrazyTanks_V2.0.vcxproj -> D:\CrazyTanks\src\x64\Debug\CrazyTanks_V2.0.exe
   CrazyTanks_V2.0.vcxproj -> D:\CrazyTanks\src\x64\Debug\CrazyTanks_V2.0.pdb (Partial PDB)

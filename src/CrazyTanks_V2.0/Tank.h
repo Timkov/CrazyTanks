@@ -24,7 +24,7 @@ public:
 
   void move (Field& field, const typeh::Direction& newDirection);
 
-  void draw (Field& field);
+  typeh::UnitSymbol getSymbol(const Field& field);
 
   void changeStrategy (std::unique_ptr<TankStrategy> newStrategy);
 
